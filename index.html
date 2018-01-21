@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script src="assets/javascript/toastr.js"></script>
-	<script src="assets/javascript/game.js"></script>
+	<script src="assets/javascript/app.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -20,6 +20,23 @@
 		</div>
 		<div class="row">
 			<button id="myStart">Start</button>
+			<button id="myRestart">Restart</button>
+		</div>
+		<div class="row">
+			<div class="col-md-12 text-center" id="myQuestion"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 text-center" id="localTimer"></div>
+		</div>		
+		<div class="row">
+			<br>
+			<div class="col-md-12 text-center myChoices" data-choice="0" id="myChoices0"></div>
+			<br>
+			<div class="col-md-12 text-center myChoices" data-choice="1" id="myChoices1"></div>
+			<br>
+			<div class="col-md-12 text-center myChoices" data-choice="2" id="myChoices2"></div>
+			<br>
+			<div class="col-md-12 text-center myChoices" data-choice="3" id="myChoices3"></div>
 		</div>
 	</div>
 </body>
