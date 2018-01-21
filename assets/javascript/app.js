@@ -46,9 +46,9 @@ $(document).ready(function() {
 			"answer" : "0"
 		},
 		{
-			"question": "Which of these songs does not begin with a drum solo?",
-			"choices" : ["Drums", "Guitar", "Keyboards", "Bass"],
-			"answer" : "1"
+			"question": "What's the name of Sponge Bob's nextdoor neighbor?",
+			"choices" : ["Mr. Krabs", "Patrick", "Squidward", "Sandy"],
+			"answer" : "2"
 		},
 		{
 			"question": "Which '90s rapper performed the song 'Gangsta's Paradise'?",
@@ -70,7 +70,9 @@ $(document).ready(function() {
 				$("#myChoices" + i).text(questions[j].choices[i]);
 			}
 		} else {
-			$("#results").html("test");
+			$("#results").html("<p>Correct Answers: " + correctCount + "</p>");
+			$("#results").append("<p>Incorrect Answers: " + incorrectCount + "</p>");
+			$("#results").append("<p>Unanswered Questions: " + unansweredCount + "</p>");
 		}
 
 		
@@ -115,20 +117,8 @@ $(document).ready(function() {
 		asd();
 	});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	$("#myRestart").click(function() {
+		location.reload();
+	});
 
 });
