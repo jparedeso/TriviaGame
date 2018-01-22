@@ -73,6 +73,10 @@ $(document).ready(function() {
 			$("#results").html("<p>Correct Answers: " + correctCount + "</p>");
 			$("#results").append("<p>Incorrect Answers: " + incorrectCount + "</p>");
 			$("#results").append("<p>Unanswered Questions: " + unansweredCount + "</p>");
+			setTimeout(myFunction, 5000);
+			function myFunction() {
+			location.reload();
+			}
 		}
 
 		
